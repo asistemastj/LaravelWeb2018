@@ -55,7 +55,7 @@
                                 <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
                                     <h2>EFECTIVIDAD
                                         COMPROMISO
-                                        RESOPONSABILIDAD</h2>
+                                        RESPONSABILIDAD</h2>
                                 </div>
                                 <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
                                     <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
@@ -85,7 +85,7 @@
                                 <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
                                     <h2>EFECTIVIDAD
                                         COMPROMISO
-                                        RESOPONSABILIDAD</h2>
+                                        RESPONSABILIDAD</h2>
                                 </div>
                                 <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
                                     <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
@@ -102,7 +102,7 @@
                                 <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
                                     <h2>EFECTIVIDAD
                                         COMPROMISO
-                                        RESOPONSABILIDAD</h2>
+                                        RESPONSABILIDAD</h2>
                                 </div>
                                 <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
                                     <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
@@ -118,7 +118,7 @@
                                 <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
                                     <h2>EFECTIVIDAD
                                         COMPROMISO
-                                        RESOPONSABILIDAD</h2>
+                                        RESPONSABILIDAD</h2>
                                 </div>
                                 <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
                                     <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
@@ -134,7 +134,7 @@
                                 <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
                                     <h2>EFECTIVIDAD
                                         COMPROMISO
-                                        RESOPONSABILIDAD</h2>
+                                        RESPONSABILIDAD</h2>
                                 </div>
                                 <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
                                     <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
@@ -150,7 +150,7 @@
                                 <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
                                     <h2>EFECTIVIDAD
                                         COMPROMISO
-                                        RESOPONSABILIDAD</h2>
+                                        RESPONSABILIDAD</h2>
                                 </div>
                                 <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
                                     <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
@@ -166,7 +166,7 @@
                                 <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
                                     <h2>EFECTIVIDAD
                                         COMPROMISO
-                                        RESOPONSABILIDAD</h2>
+                                        RESPONSABILIDAD</h2>
                                 </div>
                                 <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
                                     <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
@@ -193,34 +193,18 @@
                                 </div>
                             </div>
                             <div id="services-slides" class="services-slider">
+                                @foreach($serv as $serv)
                                 <div class="slides-tab zoom">
                                     <figure>
-                                        <a href="{{route('servicios')}}"><img src="images/infra01.jpg" alt="" /></a>
+                                        <a href="{{route('servicios')}}"><img src="{{asset('storage/'.$serv->Image)}}" alt="" /></a>
                                     </figure>
                                     <div class="slides-text">
-                                        <h4><a href="{{route('servicios')}}">Transporte para Agro Industrias </a></h4>
+                                        <h4><a href="{{route('servicios')}}">{{ $serv->Titulo }} </a></h4>
                                         <a href="{{route('servicios')}}" class="read-more">leer más <span>></span></a>
                                     </div>
                                 </div>
-                                <div class="slides-tab zoom">
-                                    <figure>
-                                        <a href="{{route('servicios')}}"><img src="images/ser02.jpg" alt="" /></a>
-                                    </figure>
-                                    <div class="slides-text">
-                                        <h4><a href="{{route('servicios')}}">Transportes de Material Oleaginoso</a></h4>
-                                        <a href="{{route('servicios')}}" class="read-more">leer más <span>></span></a>
-                                    </div>
-                                </div>
-                                <div class="slides-tab zoom">
-                                    <figure>
-                                        <a href="{{route('servicios')}}"><img src="images/yard.jpg" alt="" /></a>
-                                    </figure>
-                                    <div class="slides-text">
-                                        <h4><a href="{{route('servicios')}}">Transportes para Industrias Pesqueras</a></h4>
-                                        <a href="{{route('servicios')}}" class="read-more">leer más <span>></span></a>
-                                    </div>
-                                </div>
-                           
+                                @endforeach
+
                             </div>
                         </div>
                     </div>
@@ -297,7 +281,7 @@
                         </div>
                     </div>
                     <div class="about">
-                        <div class="figure parallax">
+                        <div class="figure parallax3">
 
                         </div>
                         <div class="transport-king">
@@ -355,9 +339,9 @@
                                             <figure>
                                                 <img src="{{asset('storage/'.$post->Imagen)}}" alt="" width="359" height="269.5">
                                                 <div class="date">
-                                                    
+
                                                     <small>{{ \Carbon\Carbon::parse($post->Fecha)->format(' j  F  ')}}</small>
-                                                       
+
                                                 </div>
                                             </figure>
                                             <div class="slides-text">
@@ -371,7 +355,7 @@
                                         </div>
                                     </div>
 
-                                    @endforeach 
+                                    @endforeach
 
                                 </div>
                             </div>
@@ -386,99 +370,29 @@
                                         <span>Empresas que confían en nosotros</span>
                                         <h2>colaboradores</h2>
                                     </div>
-
                                     <div class="design-line">
                                         <span class="design"></span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="testimonial-text" id="testimonial-text">
 
+                            <div class="testimonial-text" id="testimonial-text">
+                                @foreach($col as $col)
                                 <div class="feedback">
                                     <blockquote class="custom-quote">
-<!--                                        <span class="fa fa-quote-left custom-fa"></span>-->
-                                        <center>
+                                       <center>
                                             <p>
-                                                <img src="images/tasa.gif"/>
+                                                <img src="{{asset('storage/'.$col->Image)}}" alt=""/>
                                             </p>
 
                                         </center>
 
-
                                     </blockquote>
                                 </div>
-                                <div class="feedback">
-                                    <blockquote class="custom-quote">
-<!--                                        <span class="fa fa-quote-left custom-fa"></span>-->
-                                        <center>
-                                            <p>
-                                                <img src="images/viru.jpg"/>
-                                            </p>	
-                                        </center>
+                                @endforeach
+                             </div>
 
-
-                                    </blockquote>
-                                </div>
-                                <div class="feedback">
-                                    <blockquote class="custom-quote">
-<!--                                        <span class="fa fa-quote-left custom-fa"></span>-->
-                                        <center>
-
-                                            <p>
-                                                <img src="images/alicorp.jpg"/>
-                                            </p>	
-
-                                        </center>
-
-                                    </blockquote>
-                                </div>
-                                <div class="feedback">
-                                    <blockquote class="custom-quote">
-<!--                                        <span class="fa fa-quote-left custom-fa"></span>-->
-                                        <center>
-
-                                            <p>
-                                                <img src="images/copeinca.jpg"/>
-                                            </p>	
-
-                                        </center>
-
-                                    </blockquote>
-                                </div>
-                                <div class="feedback">
-                                    <blockquote class="custom-quote">
-<!--                                        <span class="fa fa-quote-left custom-fa"></span>-->
-                                        <center>
-
-                                            <p>
-                                                <img src="images/danper.png"/>
-                                            </p>	
-
-                                        </center>
-
-                                    </blockquote>
-                                </div>
-                                <div class="feedback">
-                                    <blockquote class="custom-quote">
-<!--                                        <span class="fa fa-quote-left custom-fa"></span>-->
-                                        <center>
-
-                                            <p>
-                                                <img src="images/aji.jpg"/>
-                                            </p>	
-
-                                        </center>
-
-                                    </blockquote>
-
-                                </div>
-
-
-
-                            </div>
-
-
-                        </div>
+                    </div>
                     </div>
 
                     @include('partials.banner')

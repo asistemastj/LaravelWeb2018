@@ -1,0 +1,6 @@
+@foreach($post as $post)
+{
+
+
+
+}

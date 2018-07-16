@@ -68,85 +68,21 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 service-category">
+                                    @foreach($serv as $serv)
                                     <div class="service-tab zoom">
                                         <figure>
-                                            <a href="#"> <img src="images/por01.jpg" alt="" /> </a>
+                                            <a href="#"> <img src="{{asset('storage/'.$serv->Image)}}" alt="" height="100%" width="100%"/> </a>
                                         </figure>
                                         <div class="service-text">
-                                            <h5>TRANSPORTE DE ETANOL E HIDROCARBUROS</h5>
+                                            <h5>{{ $serv->Titulo }}</h5>
                                             <p>
-                                                Los productos combustibles líquidos (Gasolinas, Gasoles, Dieseles y Petróleos Industriales) son transportados vía terrestre, mediante camiones cisternas debidamente acondicionadas, hacia los diferentes puntos de venta minorista o consumidores finales (Estaciones de Servicio, Grifos, Consumidores Directos, entre otros)	
+                                                {{ $serv->SerDescripcion }}
                                             </p>
                                             <a class="services-link button button-hover" href="{{route('transporte')}}">Leer más</a>
                                         </div>
                                     </div>
-                                    <div class="service-tab zoom">
-                                        <figure   class="pos-t"  >
-                                            <a href="#"> <img src="images/dock-yard.jpg" alt="" /> </a>
-                                        </figure>
-                                        <div class="service-text">
-                                            <h5>EMBARQUE DE PRODUCTOS OLEOGINOSOS</h5>
-                                            <p>
-                                                Los productos combustibles líquidos (Gasolinas, Gasoles, Dieseles y Petróleos Industriales) son transportados vía terrestre, mediante camiones cisternas debidamente acondicionadas, hacia los diferentes puntos de venta minorista o consumidores finales (Estaciones de Servicio, Grifos, Consumidores Directos, entre otros)	
-
-                                            </p>
-                                            <a class="services-link button button-hover" href="{{route('transporte')}}">Leer más</a>
-                                        </div>
-                                    </div>
-                                    <div class="service-tab zoom">
-                                        <figure>
-                                            <a href="#"> <img src="images/man.jpg" alt="" /> </a>
-                                        </figure>
-                                        <div class="service-text">
-                                            <h5>TRANSPORTE DE MATERIALES PELIGROSOS INSUMOS QUIMICOS Y PRODUCTOS FISCALIZADOS</h5>
-                                            <p>
-                                                Los productos combustibles líquidos (Gasolinas, Gasoles, Dieseles y Petróleos Industriales) son transportados vía terrestre, mediante camiones cisternas debidamente acondicionadas, hacia los diferentes puntos de venta minorista o consumidores finales (Estaciones de Servicio, Grifos, Consumidores Directos, entre otros)	
-
-                                            </p>
-                                            <a class="services-link button button-hover" href="{{route('transporte')}}">Leer más</a>
-                                        </div>
-                                    </div>
-                                    <div class="service-tab zoom">
-                                        <figure>
-                                            <a href="#"> <img src="images/Imagenes Joselito/FOTOS/DSC01756.JPG" alt="" /> </a>
-                                        </figure>
-                                        <div class="service-text">
-                                            <h5>TRANSPORTE DE CARGA PESADA EN GENERAL</h5>
-                                            <p>
-                                                Los productos combustibles líquidos (Gasolinas, Gasoles, Dieseles y Petróleos Industriales) son transportados vía terrestre, mediante camiones cisternas debidamente acondicionadas, hacia los diferentes puntos de venta minorista o consumidores finales (Estaciones de Servicio, Grifos, Consumidores Directos, entre otros)	
-
-                                            </p>
-                                            <a class="services-link button button-hover" href="{{route('transporte')}}">Leer más</a>
-                                        </div>
-                                    </div>
-                                    <div class="service-tab zoom">
-                                        <figure class="pos-t">
-                                            <a href="#"> <img src="images/man.jpg" alt="" /> </a>
-                                        </figure>
-                                        <div class="service-text">
-                                            <h5>TRANSPORTE DE MEZCLA LIQUIDA DE CAÑA DE AZÚCAR</h5>
-                                            <p>
-                                                Los productos combustibles líquidos (Gasolinas, Gasoles, Dieseles y Petróleos Industriales) son transportados vía terrestre, mediante camiones cisternas debidamente acondicionadas, hacia los diferentes puntos de venta minorista o consumidores finales (Estaciones de Servicio, Grifos, Consumidores Directos, entre otros)	
-
-                                            </p>
-                                            <a class="services-link button button-hover" href="{{route('transporte')}}">Leer más</a>
-                                        </div>
-                                    </div>
-                                    <div class="service-tab zoom">
-                                        <figure >
-                                            <a href="#"> <img src="images/man.jpg" alt="" /> </a>
-                                        </figure>
-                                        <div class="service-text">
-                                            <h5>TRANSPORTE DE HARINA DE PESCADO</h5>
-                                            <p>
-                                                Los productos combustibles líquidos (Gasolinas, Gasoles, Dieseles y Petróleos Industriales) son transportados vía terrestre, mediante camiones cisternas debidamente acondicionadas, hacia los diferentes puntos de venta minorista o consumidores finales (Estaciones de Servicio, Grifos, Consumidores Directos, entre otros)	
-
-                                            </p>
-                                            <a class="services-link button button-hover" href="{{route('transporte')}}">Leer más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                   @endforeach
+                              </div>
                         </div>
                     </div>
                     <div class="parallax-window3 custom-window" data-parallax="scroll" data-image-src="images/parallex-image.jpg">

@@ -53,8 +53,19 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-
-        'pgsql' => [
+        /*  Conexion de base de datos a tjoselito*/
+        'tjoselito' => [
+            'driver'     => 'mysql',
+            'host'       => env('TJOSELITO_HOST', 'localhost'),
+            'database'   => env('TJOSELITO_DATABASE', 'forge'),
+            'username'   => env('TJOSELITO_USERNAME', 'forge'),
+            'password'   => env('TJOSELITO_PASSWORD', ''),
+            'charset'    => 'utf8',
+            'collation'  => 'utf8_unicode_ci',
+            'prefix'     => '',
+            'strict'     => false,
+        ],
+        'pgsl' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
@@ -77,6 +88,21 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
+        'accesobd' => [
+            'driver' => 'mysql',
+            'host' => '192.168.10.21',
+            'port' => '3306',
+            'database' => 'acceso',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
+            'engine' => null,
+        ],
+
+
 
     ],
 

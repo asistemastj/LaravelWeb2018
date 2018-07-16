@@ -833,13 +833,7 @@ body #header.fixed.intelligent.fix .main-header {
 .custom-row {
 	margin-top: 74px;
 }
-figure {
-	overflow: hidden;
-	position: relative;
-	width:359px;
-	height:269.5px;
 
-}
 .date {
 	bottom: 0;
 	position: absolute;

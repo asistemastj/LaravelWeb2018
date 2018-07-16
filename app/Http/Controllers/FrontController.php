@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
 use App\Noticia;
+use App\Petroleo;
+use App\Colaboradore;
+use App\Servicio;
+
 class FrontController extends Controller
 {
     public function index(){
-    	$posts = Noticia::all();
-        return view('index', compact('posts'));
+        $posts = Noticia::all();
+        $col = Colaboradore::all();
+        $serv = Servicio::all();
+        return view('index', compact('posts','col','serv'));
+
     }
 
     public function abousUs(){
@@ -16,7 +22,8 @@ class FrontController extends Controller
     }
 
     public function service(){
-    	return view('servicios');
+        $serv = Servicio::all();
+    	return view('servicios',compact('serv'));
     }
 
     public function location(){
@@ -42,6 +49,10 @@ class FrontController extends Controller
     public function admin(){
       
     }
-    
+    public function prueba(){
+        $posts = Petroleo::all();
+        return view('prueba', compact('posts'));
+    }
+
 }
 ?>
