@@ -53,13 +53,27 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-        /*  Conexion de base de datos a tjoselito*/
+        /*  Conexion de base de datos  tjoselito*/
         'tjoselito' => [
             'driver'     => 'mysql',
-            'host'       => env('TJOSELITO_HOST', 'localhost'),
-            'database'   => env('TJOSELITO_DATABASE', 'forge'),
-            'username'   => env('TJOSELITO_USERNAME', 'forge'),
-            'password'   => env('TJOSELITO_PASSWORD', ''),
+            'host'       => env('TJOSELITO_HOST', '192.168.10.28'),
+            'port' => env('TJOSELITO_PORT', '3306'),
+            'database'   => env('TJOSELITO_DATABASE', 'tjoselito'),
+            'username'   => env('TJOSELITO_USERNAME', 'sprinter'),
+            'password'   => env('TJOSELITO_PASSWORD', 'admin2010'),
+            'charset'    => 'utf8',
+            'collation'  => 'utf8_unicode_ci',
+            'prefix'     => '',
+            'strict'     => false,
+        ],
+        /* Conexion a base de datos comun */
+        'comun' => [
+            'driver'     => 'mysql',
+            'host'       => env('COMUN_HOST', '192.168.10.28'),
+            'port' => env('COMUN_PORT', '3306'),
+            'database'   => env('COMUN_DATABASE', 'comun'),
+            'username'   => env('COMUN_USERNAME', 'sprinter'),
+            'password'   => env('COMUN_PASSWORD', 'admin2010'),
             'charset'    => 'utf8',
             'collation'  => 'utf8_unicode_ci',
             'prefix'     => '',

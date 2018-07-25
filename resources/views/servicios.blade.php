@@ -69,46 +69,56 @@
                                 </div>
                                 <div class="col-xs-12 service-category">
                                     @foreach($serv as $serv)
-                                    <div class="service-tab zoom">
-                                        <figure>
-                                            <a href="#"> <img src="{{asset('storage/'.$serv->Image)}}" alt="" height="100%" width="100%"/> </a>
-                                        </figure>
-                                        <div class="service-text">
-                                            <h5>{{ $serv->Titulo }}</h5>
-                                            <p>
-                                                {{ $serv->SerDescripcion }}
-                                            </p>
-                                            <a class="services-link button button-hover" href="{{route('transporte')}}">Leer más</a>
+                                        <div class="service-tab zoom">
+                                            <figure class="up-t" >
+                                                <a href="#"> <img src="{{asset('storage/'.$serv->Image)}}" alt="" height="100%" width="100%"/> </a>
+                                            </figure>
+                                            <div class="service-text">
+                                                <h5>{{ $serv->Titulo }}</h5>
+                                                <p>
+                                                    {{ $serv->SerDescripcion }}
+                                                </p>
+                                                <a class="services-link button button-hover" href="{{route('transporte')}}">Leer más</a>
+                                            </div>
                                         </div>
-                                    </div>
                                    @endforeach
+
                               </div>
                         </div>
                     </div>
-                    <div class="parallax-window3 custom-window" data-parallax="scroll" data-image-src="images/parallex-image.jpg">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="more-services-text ">
-                                        <h3>Más sevicios</h3>
-                                        <p>
-                                            Tambien hacemos transporte a vehiculos pesador, melaza y otros productos, los cuales no son confiados por nuestros clientes, a los cuales siempre atendemos, para brindarle el sevicio que se merecen.
-                                        </p>
-                                        <a class="services-link button button-hover" href="#">Ver más servicios</a>
+                    <div class="banner service-banner spacetop">
+                        <div class="service-image-plane parallax">
+
+                        </div>
+                        <div class="banner-text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-100">
+                                        <div class="more-services-text ">
+                                            <br><br>
+                                            <h3><font color="black">Más sevicios</font></h3>
+                                            <p><font color="black">
+                                                Tambien hacemos transporte a vehiculos pesador, melaza y otros productos, los cuales no son confiados por nuestros clientes, a los cuales siempre atendemos, para brindarle el sevicio que se merecen.
+                                             </font></p>
+                                            <a class="services-link button button-hover" href="#">Ver más servicios</a>
+                                            <br><br>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                     @include('partials.banner')
-                </div>
+                        @include('partials.footer')
+
+                    </div>
 
                 <!--Section box ends Here -->
             </section>
             <!--Section area ends Here -->
             <!--Footer area starts Here -->
-            @include('partials.footer')
+
             <!--Footer area ends Here -->
 
         </div>

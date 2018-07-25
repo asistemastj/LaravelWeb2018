@@ -5,8 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Noticia extends Model
+class Banner extends Model
 {
-       protected $table = 'noticias';
-
+    protected $table = 'banner';
 }

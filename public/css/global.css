@@ -211,6 +211,11 @@ input:focus, textarea:focus, button:focus {
 	top: 100%;
 	width: 100%;
 }
+.up-t {
+	left: 0;
+
+	width: 100%;
+}
 .flip-text {
 	transform: scale(-1, 1);
 }

@@ -24,10 +24,8 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
         <link href="css/skin.less" rel="stylesheet/less">
-
     </head>
     <body>
-
         <!-- Loader Starts here -->
         <div class="loader-block">
             <div class="loader">
@@ -45,7 +43,6 @@
                 <div class="banner">
                     <ul>
                         <!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
-
                         <li data-transition="random" data-slotamount="1">
                             <img src="images/banner-plane.jpg" alt="" />
                             <div class="banner-text">
@@ -73,7 +70,6 @@
                                         COMPROMISO
                                         REQUIREMENTS</h2>
                                 </div>
-                                
                             </div>
                         </li>
                         <li data-transition="random" data-slotamount="1">
@@ -90,7 +86,6 @@
                                 <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
                                     <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
                                 </div>
-
                             </div>
                         </li>
                         <li data-transition="random" data-slotamount="1">
@@ -173,7 +168,6 @@
                                 </div>
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -208,7 +202,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="features">
                         <div class="container">
                             <div class="row">
@@ -255,7 +248,7 @@
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
                                             <div class="features-tab">
-                                                <i class="icon-plane"></i>
+                                                 <i class="icon-plane"></i>
                                                 <div class="tab-text">
                                                     <h5>ENVÍO POR TIERRA</h5>
                                                     <p>
@@ -281,7 +274,7 @@
                         </div>
                     </div>
                     <div class="about">
-                        <div class="figure parallax3">
+                        <div class="figure parallax3" >
 
                         </div>
                         <div class="transport-king">
@@ -325,43 +318,35 @@
                                         <span>DESDE NUESTRO BLOG</span>
                                         <h2>ÚLTIMAS NOTICIAS</h2>
                                     </div>
-
                                     <div class="design-line">
                                         <span class="design"></span>
                                     </div>
                                 </div>
                                <div class="news-section">
-
-                                    @foreach($posts->take(-3) as $post)
-
+                                    @foreach($posts as $post)
                                        <div class="col-xs-12 col-sm-4">
                                         <div class="slides-tab zoom">
                                             <figure>
                                                 <img src="{{asset('storage/'.$post->Imagen)}}" alt="" width="359" height="269.5">
                                                 <div class="date">
-
                                                     <small>{{ \Carbon\Carbon::parse($post->Fecha)->format(' j  F  ')}}</small>
-
                                                 </div>
                                             </figure>
                                             <div class="slides-text">
                                                 <h5>{{ $post->Titulo }}</h5>
                                                 <p>
-                                                    {!! $post->Contenido !!}
+                                                    {{ str_limit($post->Descripcion, 50) }}
                                                 </p>
                                                 <a href="#" class="doe">JOHNATHAN DOE</a>
-                                                <a href="#" class="comments">9 comments</a>
+                                                <a href="{{ route('post',$post->slug) }}" class="comments">Leer más</a>
                                             </div>
                                         </div>
                                     </div>
-
                                     @endforeach
-
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="testimonial">
                         <div class="container">
                             <div class="row">
@@ -375,7 +360,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="testimonial-text" id="testimonial-text">
                                 @foreach($col as $col)
                                 <div class="feedback">
@@ -384,19 +368,14 @@
                                             <p>
                                                 <img src="{{asset('storage/'.$col->Image)}}" alt=""/>
                                             </p>
-
                                         </center>
-
                                     </blockquote>
                                 </div>
                                 @endforeach
                              </div>
-
                     </div>
                     </div>
-
                     @include('partials.banner')
-
                 </div>
                 <!--Section box ends Here -->
             </section>

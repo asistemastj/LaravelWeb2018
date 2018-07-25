@@ -50,33 +50,42 @@
     <!--Section box starts Here -->
     <div class="section  team-wrap air-fright storage transport-page">
       <div class="team">
-        @foreach($posts as $post)
+
         <div class="container">
           <div class="row">
-            <div class="col-md-800 col-sm-80 col-xs-200">
-              <div class="heading"> <span>Noticias</span>
-                <h2 class="h3">{{ $post->Titulo }}</h2>
+              <div class="col-md-800 col-sm-80 col-xs-200">
+                  <div class="heading"> <span>Noticias</span>
+                  </div>
+                @foreach($posts as $post)
+                 <table border="0" width="100%" height="100%" style="border-collapse: separate;border-spacing: 10px 5px;">
+                   <tr >
+                     <td colspan="2">
+                      <div class="heading">
+                        <h2 class="h3">{{ $post->Titulo }}</h2>
+                      </div>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td width="35%" >
+                      <div class="air-fright-img-part"> <img src="{{asset('storage/'.$post->Imagen)}}">
+                      </div>
+                     </td>
+                     <td align="justify" >
+                      <div class="service-list-wrap">
+                        {!! $post->Descripcion !!}
+                      </div>
+                         <a href="{{ route('post',$post->slug) }}" class="pull-right">Leer más</a>
+                     </td>
+                   </tr>
+                 </table>
+                @endforeach
+                  {{ $posts->render() }}
               </div>
-              <div class="air-fright-img-part"> <img src="{{asset('storage/'.$post->Imagen)}}">
-              </div>
-              <div class="service-list-wrap">
-                <h3 class="h5"> Beneficios </h3>
-               
-               {{ $post->Contenido }}
-               
-              
-              </div>
-            </div>
-           @endforeach
+
           </div>
         </div>
-        
         </div>
-
-      </div>
-
     </div>
-    
     <!--Section box ends Here --> 
   </section>
   <!--Section area ends Here --> 
@@ -87,15 +96,15 @@
 <!--Wrapper Section Ends Here --> 
 
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/less.js"></script> 
-<script type="text/javascript" src="js/owl.carousel.js"></script> 
-<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script> 
-<!--Parrallax --> 
-<script type="text/javascript" src="js/parallax.js"></script>  
+		<script type="text/javascript" src="js/less.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+<!--Parrallax -->
+<script type="text/javascript" src="js/parallax.js"></script>
 
-<!-- REVOLUTION BANNER CSS SETTINGS --> 
+<!-- REVOLUTION BANNER CSS SETTINGS -->
 
-<script src="js/script.js" type="text/javascript"></script> 
+<script src="js/script.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>

@@ -20,13 +20,20 @@ Route::get('/ubicacion','FrontController@location')->name('ubicacion');
 Route::get('/contacto','FrontController@contact')->name('contacto');
 Route::get('/historia','FrontController@logros')->name('historia');
 Route::get('/transporte','FrontController@transport')->name('transporte');
+
+#Routes para Petroleo
 Route::get('/noticias','FrontController@notic')->name('noticias');
-Route::get('/prueba','FrontController@prueba')->name('prueba');
+Route::get('/{slug}','FrontController@PostNotic')->name('post');
+
+
+#Routes para Petroleo
+Route::get('/prueba','FrontController@petroleo')->name('petroleo');
 
 #visitas del backend
 #***********************************************
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+
 });
 
 #***********************************************
