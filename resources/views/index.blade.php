@@ -23,7 +23,11 @@
         <link rel="stylesheet" href="css/global.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
+
         <link href="css/skin.less" rel="stylesheet/less">
+
+
+
     </head>
     <body>
         <!-- Loader Starts here -->
@@ -33,144 +37,17 @@
             </div>
         </div>
         <!-- Loader Ends here -->
+
+
+
+
         <!--Wrapper Section Start Here -->
         <div id="wrapper" class="homepage homepage-1">
             <!--header Section Start Here -->
             @include('partials.nav')
             <!--header Section Ends Here -->
             <!--banner Section starts Here -->
-            <div class="bannercontainer spacetop">
-                <div class="banner">
-                    <ul>
-                        <!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
-                        <li data-transition="random" data-slotamount="1">
-                            <img src="images/banner-plane.jpg" alt="" />
-                            <div class="banner-text">
-                                <div class="caption sft big_white" data-x="0" data-y="100" data-speed="center" data-start="1700" data-easing="Power4.easeInOut">
-                                    <a href="#" class="shipping">Últimas novedades</a>
-                                </div>
-                                <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
-                                    <h2>EFECTIVIDAD
-                                        COMPROMISO
-                                        RESPONSABILIDAD</h2>
-                                </div>
-                                <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
-                                    <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="random" data-slotamount="1">
-                            <img src="images/banner-train.jpg" alt="" />
-                            <div class="banner-text">
-                                <div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
-                                    <a href="#" class="shipping">Últimas novedades</a>
-                                </div>
-                                <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
-                                    <h2>EFECTIVIDAD
-                                        COMPROMISO
-                                        REQUIREMENTS</h2>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="random" data-slotamount="1">
-                            <img src="images/banner-truck.jpg" alt="" />
-                            <div class="banner-text">
-                                <div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
-                                    <a href="#" class="shipping">Últimas novedades</a>
-                                </div>
-                                <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
-                                    <h2>EFECTIVIDAD
-                                        COMPROMISO
-                                        RESPONSABILIDAD</h2>
-                                </div>
-                                <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
-                                    <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="random" data-slotamount="1">
-                            <img src="images/por01.jpg" alt="" />
-                            <div class="banner-text">
-                                <div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
-                                    <a href="#" class="shipping">Últimas novedades</a>
-                                </div>
-                                <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
-                                    <h2>EFECTIVIDAD
-                                        COMPROMISO
-                                        RESPONSABILIDAD</h2>
-                                </div>
-                                <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
-                                    <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="random" data-slotamount="1">
-                            <img src="images/pro02.jpg" alt="" />
-                            <div class="banner-text">
-                                <div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
-                                    <a href="#" class="shipping">Últimas novedades</a>
-                                </div>
-                                <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
-                                    <h2>EFECTIVIDAD
-                                        COMPROMISO
-                                        RESPONSABILIDAD</h2>
-                                </div>
-                                <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
-                                    <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="random" data-slotamount="1">
-                            <img src="images/slider01.jpg" alt="" />
-                            <div class="banner-text">
-                                <div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
-                                    <a href="#" class="shipping">Últimas novedades</a>
-                                </div>
-                                <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
-                                    <h2>EFECTIVIDAD
-                                        COMPROMISO
-                                        RESPONSABILIDAD</h2>
-                                </div>
-                                <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
-                                    <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="random" data-slotamount="1">
-                            <img src="images/pro01.jpg" alt="" />
-                            <div class="banner-text">
-                                <div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
-                                    <a href="#" class="shipping">Últimas novedades</a>
-                                </div>
-                                <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
-                                    <h2>EFECTIVIDAD
-                                        COMPROMISO
-                                        RESPONSABILIDAD</h2>
-                                </div>
-                                <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
-                                    <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-transition="random" data-slotamount="1">
-                            <img src="images/TJ.jpg" alt="" width="100%" height="100%"/>
-                            <div class="banner-text">
-                                <div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
-                                    <a href="#" class="shipping">Últimas novedades</a>
-                                </div>
-                                <div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
-                                    <h2>EFECTIVIDAD
-                                        COMPROMISO
-                                        RESPONSABILIDAD</h2>
-                                </div>
-                                <div class="caption lfr medium_grey"  data-x="left" data-y="center" data-speed="300" data-start="2000">
-                                    <a href="{{route('servicios')}}" class="services-link">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            @include('partials.slider')
             <!--banner Section ends Here -->
             <!--Section area starts Here -->
             <section id="section">
@@ -198,7 +75,6 @@
                                     </div>
                                 </div>
                                 @endforeach
-
                             </div>
                         </div>
                     </div>
@@ -329,7 +205,7 @@
                                             <figure>
                                                 <img src="{{asset('storage/'.$post->Imagen)}}" alt="" width="359" height="269.5">
                                                 <div class="date">
-                                                    <small>{{ \Carbon\Carbon::parse($post->Fecha)->format(' j  F  ')}}</small>
+                                                    <small>{{ $post->created_at->toFormattedDateString() }}</small>
                                                 </div>
                                             </figure>
                                             <div class="slides-text">
@@ -366,7 +242,7 @@
                                     <blockquote class="custom-quote">
                                        <center>
                                             <p>
-                                                <img src="{{asset('storage/'.$col->Image)}}" alt=""/>
+                                                <img src="{{asset('storage/'.$col->Image)}}" alt="" height="100%"/>
                                             </p>
                                         </center>
                                     </blockquote>

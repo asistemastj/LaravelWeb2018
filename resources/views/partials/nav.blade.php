@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <div class="mail">
-                        <img src="images/icon-mail.png" alt="" />
+                        <img src="{{ asset('images/icon-mail.png') }}" alt="" />
                         <span>Escribenos a : <a class="email-us" href="#">operaciones@transportesjoselito.com</a></span>
                     </div>
                 </div>
@@ -14,7 +14,7 @@
                         <a href="{{route('contacto')}}" class="request">Solicita una cotización</a>
                         <ul class="social">
                             <li>
-                                <a href="https://www.facebook.com/pages/Transportes-Joselito/193293380731320"> <i class="fa fa-facebook"></i> </a>
+                                <a href="{{ asset('https://www.facebook.com/pages/Transportes-Joselito/193293380731320') }}"> <i class="fa fa-facebook"></i> </a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/TJOSELITOPERU"> <i class="fa fa-twitter"></i> </a>
@@ -38,7 +38,7 @@
                     <div class="call-us">
                         <ul>
                             <li>
-                                <img src="images/iphone.png" alt="" />
+                                <img src="{{ asset('images/iphone.png') }}" alt="" />
                                 <span class="transport">LLÁMANOS AHORA PARA <span></span> TU TRANSPORTE</span>
                             </li>
                             <li>
@@ -48,8 +48,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-3">
-                    <a href="{{route('home')}}" class="logo"><img src="images/logo31.png" width="" alt="http://127.0.0.1:8000/" /> </a>
-
+                    <a href="{{route('home')}}" class="logo"><img src="{{ asset('images/logo31.png') }}" width="" alt="http://127.0.0.1:8000/" /> </a>
                 </div>
                 <div class="col-xs-12 col-sm-9 custom-nav">
                     <nav>
@@ -66,25 +65,13 @@
                                 </li>
                                 <li>
                                     <a href="{{route('servicios')}}">Servicios</a>
-                                    <!--
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="{{route('historia')}}">Historia</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{route('transporte')}}">Transporte</a>
-                                        </li>
-                                    </ul>
-                                    -->
                                 </li>
                                 <li>
                                     <a href="{{route('ubicacion')}}">Ubicación</a>
                                 </li>
                                 <li>
                                     <a href="{{route('noticias')}}">Noticias</a>
-                                    
                                 </li>
-                                
                                 <li>
                                     <a href="/admin">Intranet</a>
                                 </li>
